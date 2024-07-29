@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <input id="display" readonly>
+        </div>
+        <div class="buttons">
+            <button class="signs" onclick="clearDisplay( )">C</button>
+            <button class="signs"onclick="inputToDisplay('*')">*</button>
+            <button class="signs"onclick="inputToDisplay('/')">/</button>
+            <button class="signs"onclick="backSpace( )"><i class='bx bxs-tag-x'></i></button> 
+    
+            <button onclick="inputToDisplay('7')">7</button>
+            <button onclick="inputToDisplay('8')">8</button>
+            <button onclick="inputToDisplay('9')">9</button>
+            <button class="signs"onclick="inputToDisplay('+')">+</button> 
+    
+            <button onclick="inputToDisplay('4')">4</button>
+            <button onclick="inputToDisplay('5')">5</button>
+            <button onclick="inputToDisplay('6')">6</button>
+            <button class="signs" onclick="inputToDisplay('-')">-</button> 
+    
+            <button onclick="inputToDisplay('1')">1</button>
+            <button onclick="inputToDisplay('2')">2</button>
+            <button onclick="inputToDisplay('3')">3</button> 
+            <button class="signs" onclick="inputToDisplay('%')">MOD</button>
+    
+            <button onclick="inputToDisplay('0')">0</button>
+            <button onclick="inputToDisplay('00')">00</button>
+            <button onclick="inputToDisplay('.')">.</button>
+            <button class="signs" onclick="calculateValue( )">=</button>
+        </div>
+       
+        <p>&copy; 2024 MyCalc, Designed by: Salorhme</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
